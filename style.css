@@ -91,6 +91,12 @@ h6 {
   padding: 12px;
 }
 
+#header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds space between the logo and text */
+}
+
 #header .logo h1 {
   font-size: 24px;
   margin: 0;
@@ -110,7 +116,7 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 70px;
+  max-height: 50px;
 }
 
 @media (max-width: 768px) {
@@ -1570,4 +1576,47 @@ section {
 .accordion-body {
   padding: 15px;
   background: #fff;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: top; /* Aligns everything at the top */
+  padding: 40px 20px;
+  background: #2c3e50;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.parent-company {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-top: 4px solid #5dade2;
+  /* border-radius: 8px; */
+  color: #2c3e50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  max-width: 250px;
+  text-align: center;
+  position: relative;
+  top: -85px; /* Moves it UP */
+  right: -25px;
+}
+
+.parent-company h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.parent-company a {
+  color: #1abc9c;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  display: block;
+}
+
+.parent-company a:hover {
+  color: #f39c12;
 }
