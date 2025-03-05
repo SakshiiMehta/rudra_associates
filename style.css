@@ -1620,3 +1620,29 @@ section {
 .parent-company a:hover {
   color: #f39c12;
 }
+
+/* Adjust for Medium Screens */
+@media (max-width: 992px) {
+  .parent-company {
+    top: -30px; /* Move less up */
+    right: -30px; /* Move less right */
+  }
+}
+
+/* Adjust for Tablets */
+@media (max-width: 768px) {
+  .parent-company {
+    top: -20px;
+    right: 0px; /* Center align */
+    margin: 0 auto;
+  }
+}
+
+/* Adjust for Mobile Screens */
+@media (max-width: 576px) {
+  .parent-company {
+    top: 0px; /* No upward movement */
+    position: static;
+    margin-top: 15px;
+  }
+}
